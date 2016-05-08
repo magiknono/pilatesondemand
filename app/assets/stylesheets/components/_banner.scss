@@ -20,3 +20,43 @@
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #561956;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #F4E2D8;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+/**
+CUSTOM BTN
+**/
+.btn {
+    padding: 10px 20px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #561956;
+
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #F4E2D8;
+    color:#561956;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #F4E2D8;
+    box-shadow: none;
+}
+
+.btn-danger {
+  margin-bottom:10px;
+
+}

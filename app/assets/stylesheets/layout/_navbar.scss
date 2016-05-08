@@ -25,6 +25,11 @@ background: linear-gradient(to right, #561956 , #F4E2D8);
 .navbar-wagon-brand img {
   width: 220px;
 }
+.navbar-wagon-brand:hover img {
+  width: 220px;
+  background:rgba(100,100,100, 0.3);
+}
+
 
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
