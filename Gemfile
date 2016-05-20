@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_skin'
 
 group :development, :test do
   gem 'binding_of_caller'
