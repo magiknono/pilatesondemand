@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+ root to: 'pages#home'
+
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   get 'pages/home'
+  get 'videos', to: 'videos#index'
+  get 'videos/:id', to: 'videos#show'
 
-  root to: 'pages#home'
+  resources :video do
+    resources :comment, only: [:show]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
